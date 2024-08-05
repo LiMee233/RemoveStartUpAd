@@ -9,6 +9,9 @@ hostname = *.xima*.*, *.xmcdn.*, -broadcast.chat.bilibili.com, -*cdn*.biliapi.ne
 # ～ BiliBili_哔哩哔哩_应用开屏广告预加载@yjqiang
 ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
+# 删除微博开屏广告 - cherish
+^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_launch.js
+
 # > 微博_开屏广告预加载处理@ddgksf2013
 ^https?:\/\/boot.*weibo\.com\/v\d\/ad\/preload url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
